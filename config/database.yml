@@ -11,9 +11,9 @@ default: &default
 
 development:
   <<: *default
-  database: heroku_db
-  username: heroku
-  password: heroku
+  database: <%= ENV['APPNAME_DATABASE_D'] %>
+  username: <%= ENV['APPNAME_DATABASE_D_USER'] %>
+  password: <%= ENV['APPNAME_DATABASE_D_PASSWORD'] %>
   host: localhost
   encoding: unicode
 
