@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 buffer-top">
+      <% if @winner == "Ничья" %>
+        <h1 class="text-center">Ничья</h1>
+      <% elsif @winner == "Победили Вы" %>
+        <h1 class="text-center">Ура! Вы победили! :)</h1>
+      <% else %>
+        <h1 class="text-center">Вы проиграли :(</h1>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-offset-3 buffer-top">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center">Выбор компьютера:</h3>
+        </div>
+        <div class="col">
+          <h3 class="text-center">Ваш выбор:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <%= image_tag show_choice(@computer_choice) %>
+        </div>
+        <div class="col text-center">
+          <%= image_tag show_choice(@user_choice) %>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-12 text-center buffer-top">
+      <%= link_to "Еще раз!", root_path, class: "btn btn-success btn-lg" %>
+    </div>
+  </div>
+</div>

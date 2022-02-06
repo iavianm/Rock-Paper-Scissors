@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 buffer-top">
+      <h1 class="text-center">Выбирайте:</h1>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-offset-2 buffer-top">
+      <div class="row">
+        <div class="col text-center">
+          <%= link_to image_tag(asset_pack_path('media/images/stone.png')), choice_path(game: 0), method: :put %>
+        </div>
+        <div class="col text-center">
+          <%= link_to image_tag(asset_pack_path("media/images/paper.png")), choice_path(game: 2), method: :put %>
+        </div>
+        <div class="col text-center">
+          <%= link_to image_tag(asset_pack_path("media/images/scissors.png")), choice_path(game: 1), method: :put %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
