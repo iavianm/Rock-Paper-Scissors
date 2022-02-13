@@ -4,6 +4,6 @@
 
 * Ruby version: 2.7.5
 
-* Rails version: 6.1.1.4
+* Rails version: 6.1.4.1
 
 База данных не используется
